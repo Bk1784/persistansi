@@ -24,7 +24,16 @@ lalu pada future: cryptoDataFuture digunakan untuk mewakili proses assinkron unt
                     },
    yang mana ketika pengguna mengetikkan atau mengubah nilai input maka akan memanggil filterCrypto lalu emngirimkan nilai input pengguna dan data asli sebagai parameter, selanjutnya mengupdate daftar data yang ditampilkan berdasarkan input pengguna.
 7. terakhir pada ListView menggunakan Card yang didalamnya terdapat image dengan sintak Text(crypto['name']), subtitilenya   Text('Price: \$${crypto['current_price']}' dan trailing nya untuk presentase menggunakan 
-Text('Change: ${crypto['price_change_percentage_24h'].toStringAsFixed(2)}%'., ditambah ketika  crypto['price_change_percentage_24h'] nilainya lebih besar dari sama dengan 0 maka akan ditampilkan dengan tulisan warna hijau jika tidak maka ditampilkan warna merah. 
+Text('Change: ${crypto['price_change_percentage_24h'].toStringAsFixed(2)}%'., ditambah ketika  crypto['price_change_percentage_24h'] nilainya lebih besar dari sama dengan 0 maka akan ditampilkan dengan tulisan warna hijau jika tidak maka ditampilkan warna merah.
+
+
+---------- HASIL ------------
+![image](https://github.com/user-attachments/assets/301b5f10-4deb-4064-8006-8646ab029c51)
+
+![image](https://github.com/user-attachments/assets/fe48b165-4445-45ec-89f6-f5b5ced14094)
+
+
+
 
 A new Flutter project.
 
