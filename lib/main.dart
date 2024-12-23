@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:persistansi/api_service.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -10,9 +10,9 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Crypto Prices',
+      title: 'Bagus Kurniawan_362358302069',
       home: CryptoScreen(),
     );
   }
@@ -61,7 +61,7 @@ class _CryptoScreenState extends State<CryptoScreen> {
         ),
         centerTitle: true,
       ),
-      backgroundColor:  Color.fromRGBO(58, 66, 86, 1.0),
+      backgroundColor:const  Color.fromRGBO(58, 66, 86, 1.0),
       body: FutureBuilder<List<dynamic>>(
         future:
             cryptoDataFuture, //untuk menarik data pada fetchPost yang ada pada main.dart
@@ -83,8 +83,8 @@ class _CryptoScreenState extends State<CryptoScreen> {
                 Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: TextField(
-                    style: TextStyle(color: Colors.white),
-                    decoration: InputDecoration(
+                    style: const TextStyle(color: Colors.white),
+                    decoration: const InputDecoration(
                       labelStyle: TextStyle(color: Colors.white),
                       labelText: 'search',
                       border: OutlineInputBorder(
@@ -107,7 +107,7 @@ class _CryptoScreenState extends State<CryptoScreen> {
                           final crypto = data[index];
                           return Card(
                             color: Colors.black,
-                            margin: EdgeInsets.symmetric(
+                            margin:const EdgeInsets.symmetric(
                                 vertical: 8, horizontal: 16),
                             child: ListTile(
                               leading: Image.network(
@@ -115,7 +115,7 @@ class _CryptoScreenState extends State<CryptoScreen> {
                                 width: 50,
                                 height: 50,
                               ),
-                              title: Text(crypto['name'], style: TextStyle(color: Colors.white),),
+                              title: Text(crypto['name'], style:const TextStyle(color: Colors.white),),
                               subtitle:
                                   Text('Price: \$${crypto['current_price']}', style: TextStyle(color: Colors.grey[600]),),
                               trailing: Text(
